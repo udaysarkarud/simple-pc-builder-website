@@ -4,8 +4,7 @@ export default function handler(req, res) {
   const fakeData = [
     {
       id: "CPUP12345",
-      image:
-        "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i7-10700k/i7-10700k-500x500.jpg",
+      image: "./images/1.jpg",
       productName: "Intel Core i7-10700K",
       category: "processor",
       status: "In Stock",
@@ -26,8 +25,7 @@ export default function handler(req, res) {
     },
     {
       id: "CPUP67890",
-      image:
-        "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-9-5900x/ryzen-9-5900x-001-500x500.jpg",
+      image: "./images/1.jpg",
       productName: "AMD Ryzen 9 5900X",
       category: "processor",
       status: "In Stock",
@@ -49,8 +47,7 @@ export default function handler(req, res) {
     },
     {
       id: "CPUP24680",
-      image:
-        "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i5-11600k/i5-11600k-500x500.jpg",
+      image: "./images/1.jpg",
       productName: "Intel Core i5-11600K",
       category: "processor",
       status: "In Stock",
@@ -71,8 +68,7 @@ export default function handler(req, res) {
     },
     {
       id: "CPUP35713",
-      image:
-        "https://www.startech.com.bd/image/cache/catalog/processor/amd/5600x/5600x-001-500x500.jpg",
+      image: "./images/1.jpg",
       productName: "AMD Ryzen 5 5600X",
       category: "processor",
       status: "In Stock",
@@ -93,8 +89,7 @@ export default function handler(req, res) {
     },
     {
       id: "MBD12345",
-      image:
-        "https://techbd.com.bd/wp-content/uploads/2021/04/asus-rog-strix-z590-e-gaming-wifi-motherboard-1-500x500-1.png",
+      image: "./images/1.jpg",
       productName: "ASUS ROG Strix Z590-E",
       category: "Motherboard",
       status: "Out of Stock",
@@ -117,8 +112,7 @@ export default function handler(req, res) {
     },
     {
       id: "MBD67890",
-      image:
-        "https://www.techlandbd.com/image/catalog/Motherboard/Msi/Intel%20/mag-b560m-mortar-wifi/msi-mag-b560m-mortar-wifi-motherboard-1.jpg",
+      image: "./images/1.jpg",
       productName: "MSI MAG B560M Mortar WiFi",
       category: "Motherboard",
       status: "In Stock",
@@ -141,8 +135,7 @@ export default function handler(req, res) {
     },
     {
       id: "MBD35713",
-      image:
-        "https://techbd.com.bd/wp-content/uploads/2021/04/gigabyte-b450-aorus-elite-v2-motherboard1-500x500-1.png",
+      image: "./images/1.jpg",
       productName: "GIGABYTE B450 AORUS ELITE",
       category: "Motherboard",
       status: "In Stock",
@@ -165,7 +158,7 @@ export default function handler(req, res) {
     },
     {
       id: "MBD24680",
-      image: "https://www.asrock.com/mb/photo/B550M-ITXac(M1).png",
+      image: "./images/1.jpg",
       productName: "ASRock B550M-ITX/ac",
       category: "Motherboard",
       status: "In Stock",
@@ -188,8 +181,7 @@ export default function handler(req, res) {
     },
     {
       id: "RAM12345",
-      image:
-        "https://www.startech.com.bd/image/cache/catalog/ram/cosair/vengeance-16gb-ddr4/16gb-ddr4-500x500.jpg",
+      image: "./images/1.jpg",
       productName: "Corsair Vengeance LPX 16GB",
       category: "RAM",
       status: "In Stock",
@@ -210,8 +202,7 @@ export default function handler(req, res) {
     },
     {
       id: "RAM67890",
-      image:
-        "https://www.startech.com.bd/image/cache/catalog/ram/gskill/trident-z-neo/trident-z-neo-003-500x500.jpg",
+      image: "./images/1.jpg",
       productName: "G.Skill Trident Z RGB 32GB",
       category: "RAM",
       status: "In Stock",
@@ -232,8 +223,7 @@ export default function handler(req, res) {
     },
     {
       id: "RAM24680",
-      image:
-        "https://creatuscomputer.com/wp-content/uploads/2022/03/Untitled-1-1-1.jpg",
+      image: "./images/1.jpg",
       productName: "Crucial Ballistix 16GB",
       category: "RAM",
       status: "In Stock",
@@ -254,8 +244,7 @@ export default function handler(req, res) {
     },
     {
       id: "RAM35713",
-      image:
-        "https://media.kingston.com/kingston/product/ktc-product-memory-beast-ddr4-rgb-single-1-lg.jpg",
+      image: "./images/1.jpg",
       productName: "Kingston HyperX Fury 64GB",
       category: "RAM",
       status: "In Stock",
@@ -276,7 +265,7 @@ export default function handler(req, res) {
     },
     {
       id: "RAM46802",
-      image: "http://example.com/ram46802.jpg",
+      image: "./images/1.jpg",
       productName: "Team T-Force Delta RGB 32GB",
       category: "RAM",
       status: "In Stock",
@@ -297,7 +286,7 @@ export default function handler(req, res) {
     },
     {
       id: "RAM58024",
-      image: "http://example.com/ram58024.jpg",
+      image: "./images/1.jpg",
       productName: "ADATA XPG Spectrix D60G 16GB",
       category: "RAM",
       status: "Out of Stock",
@@ -318,7 +307,7 @@ export default function handler(req, res) {
     },
     {
       id: "PSU12345",
-      image: "http://example.com/psu12345.jpg",
+      image: "./images/1.jpg",
       productName: "Corsair RM750x",
       category: "PowerSupply",
       status: "In Stock",
@@ -342,7 +331,7 @@ export default function handler(req, res) {
     },
     {
       id: "PSU67890",
-      image: "http://example.com/psu67890.jpg",
+      image: "./images/1.jpg",
       productName: "EVGA SuperNOVA 850 P2",
       category: "PowerSupply",
       status: "In Stock",
@@ -366,7 +355,7 @@ export default function handler(req, res) {
     },
     {
       id: "PSU24680",
-      image: "http://example.com/psu24680.jpg",
+      image: "./images/1.jpg",
       productName: "Seasonic Focus GX-650",
       category: "PowerSupply",
       status: "In Stock",
@@ -390,7 +379,7 @@ export default function handler(req, res) {
     },
     {
       id: "PSU35713",
-      image: "http://example.com/psu35713.jpg",
+      image: "./images/1.jpg",
       productName: "be quiet! Straight Power 11 750W",
       category: "PowerSupply",
       status: "In Stock",
@@ -414,7 +403,7 @@ export default function handler(req, res) {
     },
     {
       id: "PSU46802",
-      image: "http://example.com/psu46802.jpg",
+      image: "./images/1.jpg",
       productName: "Thermaltake Toughpower GF1 850W",
       category: "PowerSupply",
       status: "Out of Stock",
@@ -438,7 +427,7 @@ export default function handler(req, res) {
     },
     {
       id: "PSU58024",
-      image: "http://example.com/psu58024.jpg",
+      image: "./images/1.jpg",
       productName: "Cooler Master MWE Gold 650",
       category: "PowerSupply",
       status: "In Stock",
@@ -462,7 +451,7 @@ export default function handler(req, res) {
     },
     {
       id: "STO12345",
-      image: "http://example.com/storage12345.jpg",
+      image: "./images/1.jpg",
       productName: "Samsung 970 EVO Plus 1TB",
       category: "StorageDevice",
       status: "In Stock",
@@ -486,7 +475,7 @@ export default function handler(req, res) {
     },
     {
       id: "STO67890",
-      image: "http://example.com/storage67890.jpg",
+      image: "./images/1.jpg",
       productName: "Crucial MX500 2TB",
       category: "StorageDevice",
       status: "In Stock",
@@ -510,7 +499,7 @@ export default function handler(req, res) {
     },
     {
       id: "STO24680",
-      image: "http://example.com/storage24680.jpg",
+      image: "./images/1.jpg",
       productName: "Western Digital Black SN750 500GB",
       category: "StorageDevice",
       status: "In Stock",
@@ -534,7 +523,7 @@ export default function handler(req, res) {
     },
     {
       id: "STO35713",
-      image: "http://example.com/storage35713.jpg",
+      image: "./images/1.jpg",
       productName: "Seagate BarraCuda 4TB",
       category: "StorageDevice",
       status: "In Stock",
@@ -558,7 +547,7 @@ export default function handler(req, res) {
     },
     {
       id: "STO46802",
-      image: "http://example.com/storage46802.jpg",
+      image: "./images/1.jpg",
       productName: "ADATA SU800 256GB",
       category: "StorageDevice",
       status: "In Stock",
@@ -582,7 +571,7 @@ export default function handler(req, res) {
     },
     {
       id: "STO58024",
-      image: "http://example.com/storage58024.jpg",
+      image: "./images/1.jpg",
       productName: "Toshiba X300 8TB",
       category: "StorageDevice",
       status: "Out of Stock",
@@ -606,7 +595,7 @@ export default function handler(req, res) {
     },
     {
       id: "STO82037",
-      image: "http://example.com/storage82037.jpg",
+      image: "./images/1.jpg",
       productName: "Intel Optane Memory H10 512GB",
       category: "StorageDevice",
       status: "In Stock",
@@ -630,7 +619,7 @@ export default function handler(req, res) {
     },
     {
       id: "MON12345",
-      image: "http://example.com/monitor12345.jpg",
+      image: "./images/1.jpg",
       productName: "ASUS ROG Swift PG279Q",
       category: "Monitor",
       status: "In Stock",
@@ -658,7 +647,7 @@ export default function handler(req, res) {
     },
     {
       id: "MON67890",
-      image: "http://example.com/monitor67890.jpg",
+      image: "./images/1.jpg",
       productName: "Acer Predator XB271HU",
       category: "Monitor",
       status: "In Stock",
@@ -685,7 +674,7 @@ export default function handler(req, res) {
     },
     {
       id: "MON24680",
-      image: "http://example.com/monitor24680.jpg",
+      image: "./images/1.jpg",
       productName: "LG 34GN850-B",
       category: "Monitor",
       status: "In Stock",
@@ -713,7 +702,7 @@ export default function handler(req, res) {
     },
     {
       id: "MON35713",
-      image: "http://example.com/monitor35713.jpg",
+      image: "./images/1.jpg",
       productName: "Dell Ultrasharp U2419H",
       category: "Monitor",
       status: "In Stock",
@@ -741,7 +730,7 @@ export default function handler(req, res) {
     },
     {
       id: "MON46802",
-      image: "http://example.com/monitor46802.jpg",
+      image: "./images/1.jpg",
       productName: "ViewSonic XG2402",
       category: "Monitor",
       status: "In Stock",
@@ -769,7 +758,7 @@ export default function handler(req, res) {
     },
     {
       id: "OTH12345",
-      image: "http://example.com/others12345.jpg",
+      image: "./images/1.jpg",
       productName: "Logitech G502 Hero Gaming Mouse",
       category: "Others",
       status: "In Stock",
@@ -794,7 +783,7 @@ export default function handler(req, res) {
     },
     {
       id: "OTH67890",
-      image: "http://example.com/others67890.jpg",
+      image: "./images/1.jpg",
       productName: "Blue Yeti USB Microphone",
       category: "Others",
       status: "In Stock",
@@ -820,7 +809,7 @@ export default function handler(req, res) {
     },
     {
       id: "OTH24680",
-      image: "http://example.com/others24680.jpg",
+      image: "./images/1.jpg",
       productName: "Anker PowerCore 26800 Portable Charger",
       category: "Others",
       status: "In Stock",
@@ -844,7 +833,7 @@ export default function handler(req, res) {
     },
     {
       id: "OTH35713",
-      image: "http://example.com/others35713.jpg",
+      image: "./images/1.jpg",
       productName: "AmazonBasics Laptop Stand",
       category: "Others",
       status: "In Stock",
@@ -866,7 +855,7 @@ export default function handler(req, res) {
     },
     {
       id: "OTH46802",
-      image: "http://example.com/others46802.jpg",
+      image: "./images/1.jpg",
       productName: "Raspberry Pi 4 Model B",
       category: "Others",
       status: "In Stock",

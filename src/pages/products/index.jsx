@@ -1,5 +1,6 @@
 import ProductCard from "@/components/UI/ProductCard";
 import RootLayout from "@/components/layouts/RootLayout";
+import shuffleProducts from "@/components/utils/shuffleproducts";
 import React from "react";
 
 const Products = ({ products }) => {

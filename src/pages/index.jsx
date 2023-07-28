@@ -1,9 +1,7 @@
 import RootLayout from "@/components/layouts/RootLayout";
-import CustomerReview from "@/components/shared/CustomerReview";
-import Footer from "@/components/shared/Footer";
-import Header from "@/components/shared/Header";
 import Hero from "@/components/shared/Hero";
 import Products from "./products";
+import shuffleProducts from "@/components/utils/shuffleproducts";
 
 export default function HomePage({ data }) {
   return (
@@ -21,5 +19,6 @@ HomePage.getLayout = function getLayout(page) {
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:3000/api/products");
   const { data } = await res.json();
-  return { props: { data } };
+  const afterShuffle = shuffleProducts(data);
+  return { props: { data: afterShuffle } };
 };
