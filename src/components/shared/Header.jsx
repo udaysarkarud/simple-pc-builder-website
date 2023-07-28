@@ -29,27 +29,30 @@ const Header = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <Link href="/processor">CPU / Processor</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/motherboard">Motherboard</Link>
+                  <Link href="/category/processor">CPU / Processor</Link>
                 </li>
                 <li>
-                  <Link href="/ram">RAM</Link>
+                  <Link href="/category/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <Link href="/powersupply">Power Supply Unit</Link>
+                  <Link href="/category/ram">RAM</Link>
                 </li>
                 <li>
-                  <Link href="/monitor">Monitor</Link>
+                  <Link href="/category/powersupply">Power Supply Unit</Link>
                 </li>
                 <li>
-                  <Link href="/others">Others</Link>
+                  <Link href="/category/monitor">Monitor</Link>
+                </li>
+                <li>
+                  <Link href="/category/others">Others</Link>
                 </li>
               </ul>
             </div>
             <div className="navbar-start">
-              <a href="#">
+              <Link href="/">
                 <svg
                   aria-hidden="true"
                   viewBox="0 0 109 40"
@@ -82,39 +85,61 @@ const Header = () => {
                     fill="#0F172A"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1">
                 <li>
-                  <Link href="/processor">CPU / Processor</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/motherboard">Motherboard</Link>
+                  <Link href="/category/processor">CPU / Processor</Link>
                 </li>
                 <li>
-                  <Link href="/ram">RAM</Link>
+                  <Link href="/category/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <Link href="/powersupply">Power Supply Unit</Link>
+                  <Link href="/category/ram">RAM</Link>
                 </li>
                 <li>
-                  <Link href="/monitor">Monitor</Link>
+                  <Link href="/category/powersupply">Power Supply Unit</Link>
                 </li>
                 <li>
-                  <Link href="/others">Others</Link>
+                  <Link href="/category/monitor">Monitor</Link>
+                </li>
+                <li>
+                  <Link href="/category/others">Others</Link>
                 </li>
               </ul>
             </div>
             <div className="navbar-end">
               <Link
                 href="/"
-                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600"
+                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-500 text-white hover:text-slate-100 hover:bg-blue-800 mx-1"
               >
-                <span>
-                  Get started <span className="hidden lg:inline">today</span>
-                </span>
+                <span>PC Builder</span>
               </Link>
+
+              <Link
+                href="/login"
+                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-rose-400 text-white hover:text-slate-100 hover:bg-rose-800 mx-1"
+              >
+                <span>Login</span>
+              </Link>
+
+              {/* <Link
+                href="/signin"
+                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-lime-700 text-white hover:text-slate-100 hover:bg-lime-800"
+              >
+                <span>Singin</span>
+              </Link>
+
+              <Link
+                href="/logout"
+                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-red-400 text-white hover:text-slate-100 hover:bg-red-600"
+              >
+                <span>Logout</span>
+              </Link> */}
             </div>
           </div>
         </nav>

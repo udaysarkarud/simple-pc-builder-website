@@ -20,8 +20,9 @@ const Hero = () => {
         for Your businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Most bookkeeping software is accurate, but hard to use. We make the
-        opposite trade-off, and hope you don’t get audited.
+        Our PCs are perfect for gamers, students, and professionals alike. Get
+        your new PC today and start enjoying all the benefits of a powerful and
+        reliable machine.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Link
