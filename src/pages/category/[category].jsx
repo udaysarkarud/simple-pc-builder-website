@@ -1,15 +1,34 @@
+import ProductCard from "@/components/UI/ProductCard";
 import RootLayout from "@/components/layouts/RootLayout";
 import { useRouter } from "next/router";
 import React from "react";
 
-const CategoryPage = () => {
+const CategoryPage = ({ products }) => {
   const {
     query: { category },
   } = useRouter();
   return (
-    <div>
-      <h1>category Page here {category}</h1>
-    </div>
+    <section className="bg-slate-50 py-10 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl md:text-center">
+          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+            Discover Wide Range of{" "}
+            {category.replace(/\w\S*/g, function (txt) {
+              return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            })}
+          </h2>
+          <p className="mt-4 text-lg tracking-tight text-slate-700">
+            Explore Our Collection of Fast and the Perfect Solution to Meet Your
+            Computing Needs and Take Productivity to New Heights.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+          {products.map((product) => (
+            <ProductCard key={product?.id} product={product} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
@@ -18,3 +37,22 @@ export default CategoryPage;
 CategoryPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
+
+export async function getStaticPaths() {
+  const res = await fetch("http://localhost:3000/api/category");
+  const { data } = await res.json();
+
+  const paths = data.map((product) => ({
+    params: { category: product.category },
+  }));
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const res = await fetch(
+    `http://localhost:3000/api/category/${params.category}`
+  );
+  const products = await res.json();
+  return { props: { products } };
+}

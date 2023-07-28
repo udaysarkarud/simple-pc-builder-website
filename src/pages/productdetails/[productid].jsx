@@ -1,6 +1,5 @@
 import ShowReview from "@/components/UI/ShowReview";
 import RootLayout from "@/components/layouts/RootLayout";
-import { useRouter } from "next/router";
 import React from "react";
 
 const ProductDetails = ({ product }) => {
