@@ -1,12 +1,18 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import RootLayout from "@/components/layouts/RootLayout";
+import CustomerReview from "@/components/shared/CustomerReview";
+import Footer from "@/components/shared/Footer";
+import Header from "@/components/shared/Header";
+import Hero from "@/components/shared/Hero";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
-      <h1>Hello</h1>
+      <Hero />
+      <CustomerReview />
     </main>
   );
 }
+
+HomePage.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
