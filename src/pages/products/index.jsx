@@ -17,7 +17,7 @@ const Products = ({ products }) => {
             mission-critical features.
           </p>
         </div>
-        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
           {products.map((product) => (
             <ProductCard key={product?.id} product={product} />
           ))}

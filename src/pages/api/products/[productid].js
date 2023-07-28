@@ -3,7 +3,7 @@ export default async function handler(req, res) {
   const fakeData = [
     {
       id: "CPUP12345",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Intel Core i7-10700K",
       category: "processor",
       status: "In Stock",
@@ -20,11 +20,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.8,
-      reviews: 300,
+      reviews: [
+        {
+          customer_name: "John Doe",
+          comment_date: "2023-07-28",
+          comment:
+            "Great processor! It's super fast and handles all my tasks with ease.",
+        },
+        {
+          customer_name: "Sarah Smith",
+          comment_date: "2023-07-27",
+          comment:
+            "I am impressed with the processor's performance. My games run smoothly now!",
+        },
+        {
+          customer_name: "Michael Johnson",
+          comment_date: "2023-07-26",
+          comment:
+            "The processor exceeded my expectations. Editing videos has never been this quick!",
+        },
+        {
+          customer_name: "Emily Brown",
+          comment_date: "2023-07-25",
+          comment:
+            "This processor is a game-changer for my work. Multitasking is a breeze.",
+        },
+        {
+          customer_name: "David Lee",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor's price is justified by its performance. Happy with my purchase!",
+        },
+        {
+          customer_name: "Jennifer Miller",
+          comment_date: "2023-07-23",
+          comment:
+            "Smooth checkout process and quick delivery. The processor works like a charm!",
+        },
+      ],
     },
     {
       id: "CPUP67890",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "AMD Ryzen 9 5900X",
       category: "processor",
       status: "In Stock",
@@ -42,11 +79,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 280,
+      reviews: [
+        {
+          customer_name: "Alex Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! My computer's performance has significantly improved, and it handles heavy tasks like a breeze.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "I am extremely satisfied with the processor I purchased. It arrived quickly, and the installation process was smooth. It has made a noticeable difference in my PC's speed.",
+        },
+        {
+          customer_name: "Ryan Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for delivering such a high-quality processor. It was worth every penny, and I'm impressed by how well it performs even under heavy workloads.",
+        },
+        {
+          customer_name: "Sophia Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor exceeded my expectations! My gaming experience has improved dramatically, and I can now run the latest games with ease. Thank you!",
+        },
+        {
+          customer_name: "William Lee",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm delighted with my purchase. The processor I bought from your website has transformed my computer's speed and responsiveness. Highly recommended!",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "Your website provided me with the perfect processor for my needs. It was shipped quickly, and I'm thrilled with its performance. You've earned a loyal customer!",
+        },
+      ],
     },
     {
       id: "CPUP24680",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Intel Core i5-11600K",
       category: "processor",
       status: "In Stock",
@@ -63,11 +137,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.6,
-      reviews: 230,
+      reviews: [
+        {
+          customer_name: "John Smith",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website works like a charm! It has significantly improved my computer's performance. Thank you!",
+        },
+        {
+          customer_name: "Emily Johnson",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm really satisfied with the processor I purchased. It was easy to install, and my system now runs much smoother and faster.",
+        },
+        {
+          customer_name: "Michael Lee",
+          comment_date: "2023-07-26",
+          comment:
+            "Excellent service and product! The processor I received was exactly as described, and it arrived promptly. Highly recommended!",
+        },
+        {
+          customer_name: "Sarah Williams",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm impressed with the processor's performance. It handles resource-intensive tasks with ease, making multitasking a breeze.",
+        },
+        {
+          customer_name: "David Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor has exceeded my expectations. Your website offered the best price, and the customer support was top-notch!",
+        },
+        {
+          customer_name: "Jennifer Martinez",
+          comment_date: "2023-07-23",
+          comment:
+            "I'm a first-time customer, and I couldn't be happier. The processor arrived well-packaged and works flawlessly. Will shop here again!",
+        },
+      ],
     },
     {
       id: "CPUP35713",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "AMD Ryzen 5 5600X",
       category: "processor",
       status: "In Stock",
@@ -84,11 +195,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.6,
       averageRating: 4.7,
-      reviews: 210,
+      reviews: [
+        {
+          customer_name: "Alex Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! My computer's performance has significantly improved, and it handles heavy tasks like a breeze.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "I am extremely satisfied with the processor I purchased. It arrived quickly, and the installation process was smooth. It has made a noticeable difference in my PC's speed.",
+        },
+        {
+          customer_name: "Ryan Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for delivering such a high-quality processor. It was worth every penny, and I'm impressed by how well it performs even under heavy workloads.",
+        },
+        {
+          customer_name: "Sophia Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor exceeded my expectations! My gaming experience has improved dramatically, and I can now run the latest games with ease. Thank you!",
+        },
+        {
+          customer_name: "William Lee",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm delighted with my purchase. The processor I bought from your website has transformed my computer's speed and responsiveness. Highly recommended!",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "Your website provided me with the perfect processor for my needs. It was shipped quickly, and I'm thrilled with its performance. You've earned a loyal customer!",
+        },
+      ],
     },
     {
       id: "MBD12345",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "ASUS ROG Strix Z590-E",
       category: "Motherboard",
       status: "Out of Stock",
@@ -107,11 +255,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.6,
-      reviews: 250,
+      reviews: [
+        {
+          customer_name: "Sarah Miller",
+          comment_date: "2023-07-28",
+          comment:
+            "I am amazed by the processor's performance! My computer now runs like a dream, and it handles multitasking effortlessly. Thank you for an excellent product!",
+        },
+        {
+          customer_name: "James Anderson",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor I purchased from your website is outstanding! It has boosted my PC's speed and responsiveness, making it a joy to use for both work and gaming.",
+        },
+        {
+          customer_name: "Ava Thompson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering top-notch processors. The one I received works flawlessly, and I'm impressed by how cool it stays even during intensive tasks.",
+        },
+        {
+          customer_name: "Daniel Wilson",
+          comment_date: "2023-07-25",
+          comment:
+            "I couldn't be happier with my purchase. The processor I bought from your website has breathed new life into my old computer, and it's like having a new system!",
+        },
+        {
+          customer_name: "Lily Martin",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor is a game-changer! My gaming performance has dramatically improved, and I can now enjoy smooth gameplay with high frame rates. Highly recommended!",
+        },
+        {
+          customer_name: "Ethan Carter",
+          comment_date: "2023-07-23",
+          comment:
+            "I'm thoroughly satisfied with my experience. The processor arrived on time, and it has exceeded my expectations in terms of speed and overall performance.",
+        },
+      ],
     },
     {
       id: "MBD67890",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "MSI MAG B560M Mortar WiFi",
       category: "Motherboard",
       status: "In Stock",
@@ -130,11 +315,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.6,
       averageRating: 4.8,
-      reviews: 230,
+      reviews: [
+        {
+          customer_name: "Michael Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am highly impressed with the processor I bought from your website. It has given my computer a significant performance boost, and it handles heavy tasks with ease.",
+        },
+        {
+          customer_name: "Emily Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor exceeded my expectations! It arrived on time, and the installation process was a breeze. My PC now runs faster and smoother than ever before.",
+        },
+        {
+          customer_name: "Christopher Smith",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm really happy with my purchase. The processor is powerful and efficient, and it has made a noticeable difference in my computer's overall performance.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor has been a game-changer for me. It handles demanding applications effortlessly, and I'm delighted with the seamless experience it provides.",
+        },
+        {
+          customer_name: "David Thompson",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website offered a great selection of processors, and I found the perfect one for my needs. It has transformed my PC into a powerful workstation.",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "I am thoroughly satisfied with the processor and the buying experience from your website. The processor's performance is outstanding, and I'm a happy customer.",
+        },
+      ],
     },
     {
       id: "MBD35713",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "GIGABYTE B450 AORUS ELITE",
       category: "Motherboard",
       status: "In Stock",
@@ -153,11 +375,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.5,
       averageRating: 4.6,
-      reviews: 200,
+      reviews: [
+        {
+          customer_name: "Andrew Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I purchased from your website is outstanding! It has significantly improved my computer's performance, and I'm very satisfied with my purchase.",
+        },
+        {
+          customer_name: "Sophia Williams",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm delighted with the processor I received. It was easy to install, and now my PC runs like a charm. Thank you for providing such a great product!",
+        },
+        {
+          customer_name: "Ryan Martin",
+          comment_date: "2023-07-26",
+          comment:
+            "The processor is fantastic! It handles all my tasks effortlessly, and I've noticed a considerable speed boost. I'm glad I chose your website for my purchase.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm thoroughly impressed with the processor's performance. It has exceeded my expectations, and I'm recommending your website to all my friends!",
+        },
+        {
+          customer_name: "Alexander Wilson",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor I bought from your website is a game-changer. It has made my computer lightning-fast, and I'm thrilled with its capabilities.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I couldn't be happier with my purchase. Your website offered a great selection, and the processor I chose has transformed my PC into a powerhouse!",
+        },
+      ],
     },
     {
       id: "MBD24680",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "ASRock B550M-ITX/ac",
       category: "Motherboard",
       status: "In Stock",
@@ -176,11 +435,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.5,
-      reviews: 180,
+      reviews: [
+        {
+          customer_name: "Michael Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am highly impressed with the processor I bought from your website. It has given my computer a significant performance boost, and it handles heavy tasks with ease.",
+        },
+        {
+          customer_name: "Emily Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor exceeded my expectations! It arrived on time, and the installation process was a breeze. My PC now runs faster and smoother than ever before.",
+        },
+        {
+          customer_name: "Christopher Smith",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm really happy with my purchase. The processor is powerful and efficient, and it has made a noticeable difference in my computer's overall performance.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor has been a game-changer for me. It handles demanding applications effortlessly, and I'm delighted with the seamless experience it provides.",
+        },
+        {
+          customer_name: "David Thompson",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website offered a great selection of processors, and I found the perfect one for my needs. It has transformed my PC into a powerful workstation.",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "I am thoroughly satisfied with the processor and the buying experience from your website. The processor's performance is outstanding, and I'm a happy customer.",
+        },
+      ],
     },
     {
       id: "RAM12345",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Corsair Vengeance LPX 16GB",
       category: "RAM",
       status: "In Stock",
@@ -197,11 +493,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 180,
+      reviews: [
+        {
+          customer_name: "Michael Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am highly impressed with the processor I bought from your website. It has given my computer a significant performance boost, and it handles heavy tasks with ease.",
+        },
+        {
+          customer_name: "Emily Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor exceeded my expectations! It arrived on time, and the installation process was a breeze. My PC now runs faster and smoother than ever before.",
+        },
+        {
+          customer_name: "Christopher Smith",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm really happy with my purchase. The processor is powerful and efficient, and it has made a noticeable difference in my computer's overall performance.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor has been a game-changer for me. It handles demanding applications effortlessly, and I'm delighted with the seamless experience it provides.",
+        },
+        {
+          customer_name: "David Thompson",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website offered a great selection of processors, and I found the perfect one for my needs. It has transformed my PC into a powerful workstation.",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "I am thoroughly satisfied with the processor and the buying experience from your website. The processor's performance is outstanding, and I'm a happy customer.",
+        },
+      ],
     },
     {
       id: "RAM67890",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "G.Skill Trident Z RGB 32GB",
       category: "RAM",
       status: "In Stock",
@@ -218,11 +551,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.8,
-      reviews: 220,
+      reviews: [
+        {
+          customer_name: "Andrew Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I purchased from your website is outstanding! It has significantly improved my computer's performance, and I'm very satisfied with my purchase.",
+        },
+        {
+          customer_name: "Sophia Williams",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm delighted with the processor I received. It was easy to install, and now my PC runs like a charm. Thank you for providing such a great product!",
+        },
+        {
+          customer_name: "Ryan Martin",
+          comment_date: "2023-07-26",
+          comment:
+            "The processor is fantastic! It handles all my tasks effortlessly, and I've noticed a considerable speed boost. I'm glad I chose your website for my purchase.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm thoroughly impressed with the processor's performance. It has exceeded my expectations, and I'm recommending your website to all my friends!",
+        },
+        {
+          customer_name: "Alexander Wilson",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor I bought from your website is a game-changer. It has made my computer lightning-fast, and I'm thrilled with its capabilities.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I couldn't be happier with my purchase. Your website offered a great selection, and the processor I chose has transformed my PC into a powerhouse!",
+        },
+      ],
     },
     {
       id: "RAM24680",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Crucial Ballistix 16GB",
       category: "RAM",
       status: "In Stock",
@@ -239,11 +609,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.6,
-      reviews: 200,
+      reviews: [
+        {
+          customer_name: "Jennifer Lee",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website is incredible! It has given my computer a new lease on life, and I'm extremely satisfied with its performance.",
+        },
+        {
+          customer_name: "William Johnson",
+          comment_date: "2023-07-27",
+          comment:
+            "I am impressed with the processor's capabilities. It handles demanding tasks effortlessly, and my system runs smoother than ever before. Thank you!",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your website for providing top-notch processors. The one I received is perfect for my needs, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Ethan Wilson",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It has improved my gaming experience significantly, and I'm thrilled with the exceptional performance it offers.",
+        },
+        {
+          customer_name: "Ava Martinez",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm really impressed with the processor's speed and efficiency. It was a great investment, and I'm glad I chose your website for my processor upgrade.",
+        },
+        {
+          customer_name: "Oliver Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor exceeded my expectations by far! It has made multitasking a breeze, and I'm recommending your website to all my tech-savvy friends.",
+        },
+      ],
     },
     {
       id: "RAM35713",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Kingston HyperX Fury 64GB",
       category: "RAM",
       status: "In Stock",
@@ -260,11 +667,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.7,
-      reviews: 250,
+      reviews: [
+        {
+          customer_name: "Emily Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am thrilled with the processor I purchased from your website. It has transformed my computer's performance, and I'm impressed with its speed.",
+        },
+        {
+          customer_name: "Michael Wilson",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor is fantastic! It handles all my tasks with ease, and I've noticed a significant improvement in my productivity. Thank you!",
+        },
+        {
+          customer_name: "Sophia Miller",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm extremely satisfied with the processor's performance. It's been a pleasure using it, and I'm recommending your website to my colleagues.",
+        },
+        {
+          customer_name: "Daniel Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor I bought from your website is a game-changer for my PC. It runs much smoother now, and I'm grateful for the excellent service!",
+        },
+        {
+          customer_name: "Olivia Martin",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website provided the perfect processor for my needs. It's fast, reliable, and exactly what I was looking for. Keep up the great work!",
+        },
+        {
+          customer_name: "Ethan Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I'm really impressed with the processor's performance and how cool it stays under load. It's a great investment, and I'm a satisfied customer.",
+        },
+      ],
     },
     {
       id: "RAM46802",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Team T-Force Delta RGB 32GB",
       category: "RAM",
       status: "In Stock",
@@ -281,11 +725,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.8,
-      reviews: 190,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
     {
       id: "RAM58024",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "ADATA XPG Spectrix D60G 16GB",
       category: "RAM",
       status: "Out of Stock",
@@ -302,11 +783,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.9,
-      reviews: 300,
+      reviews: [
+        {
+          customer_name: "John Smith",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website works like a charm! It has significantly improved my computer's performance. Thank you!",
+        },
+        {
+          customer_name: "Emily Johnson",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm really satisfied with the processor I purchased. It was easy to install, and my system now runs much smoother and faster.",
+        },
+        {
+          customer_name: "Michael Lee",
+          comment_date: "2023-07-26",
+          comment:
+            "Excellent service and product! The processor I received was exactly as described, and it arrived promptly. Highly recommended!",
+        },
+        {
+          customer_name: "Sarah Williams",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm impressed with the processor's performance. It handles resource-intensive tasks with ease, making multitasking a breeze.",
+        },
+        {
+          customer_name: "David Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor has exceeded my expectations. Your website offered the best price, and the customer support was top-notch!",
+        },
+        {
+          customer_name: "Jennifer Martinez",
+          comment_date: "2023-07-23",
+          comment:
+            "I'm a first-time customer, and I couldn't be happier. The processor arrived well-packaged and works flawlessly. Will shop here again!",
+        },
+      ],
     },
     {
       id: "PSU12345",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Corsair RM750x",
       category: "PowerSupply",
       status: "In Stock",
@@ -326,11 +844,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 180,
+      reviews: [
+        {
+          customer_name: "Alex Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! My computer's performance has significantly improved, and it handles heavy tasks like a breeze.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "I am extremely satisfied with the processor I purchased. It arrived quickly, and the installation process was smooth. It has made a noticeable difference in my PC's speed.",
+        },
+        {
+          customer_name: "Ryan Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for delivering such a high-quality processor. It was worth every penny, and I'm impressed by how well it performs even under heavy workloads.",
+        },
+        {
+          customer_name: "Sophia Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor exceeded my expectations! My gaming experience has improved dramatically, and I can now run the latest games with ease. Thank you!",
+        },
+        {
+          customer_name: "William Lee",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm delighted with my purchase. The processor I bought from your website has transformed my computer's speed and responsiveness. Highly recommended!",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "Your website provided me with the perfect processor for my needs. It was shipped quickly, and I'm thrilled with its performance. You've earned a loyal customer!",
+        },
+      ],
     },
     {
       id: "PSU67890",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "EVGA SuperNOVA 850 P2",
       category: "PowerSupply",
       status: "In Stock",
@@ -350,11 +905,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.8,
-      reviews: 220,
+      reviews: [
+        {
+          customer_name: "Alex Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! My computer's performance has significantly improved, and it handles heavy tasks like a breeze.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "I am extremely satisfied with the processor I purchased. It arrived quickly, and the installation process was smooth. It has made a noticeable difference in my PC's speed.",
+        },
+        {
+          customer_name: "Ryan Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for delivering such a high-quality processor. It was worth every penny, and I'm impressed by how well it performs even under heavy workloads.",
+        },
+        {
+          customer_name: "Sophia Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor exceeded my expectations! My gaming experience has improved dramatically, and I can now run the latest games with ease. Thank you!",
+        },
+        {
+          customer_name: "William Lee",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm delighted with my purchase. The processor I bought from your website has transformed my computer's speed and responsiveness. Highly recommended!",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "Your website provided me with the perfect processor for my needs. It was shipped quickly, and I'm thrilled with its performance. You've earned a loyal customer!",
+        },
+      ],
     },
     {
       id: "PSU24680",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Seasonic Focus GX-650",
       category: "PowerSupply",
       status: "In Stock",
@@ -374,11 +966,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.6,
-      reviews: 200,
+      reviews: [
+        {
+          customer_name: "Andrew Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I purchased from your website is outstanding! It has significantly improved my computer's performance, and I'm very satisfied with my purchase.",
+        },
+        {
+          customer_name: "Sophia Williams",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm delighted with the processor I received. It was easy to install, and now my PC runs like a charm. Thank you for providing such a great product!",
+        },
+        {
+          customer_name: "Ryan Martin",
+          comment_date: "2023-07-26",
+          comment:
+            "The processor is fantastic! It handles all my tasks effortlessly, and I've noticed a considerable speed boost. I'm glad I chose your website for my purchase.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm thoroughly impressed with the processor's performance. It has exceeded my expectations, and I'm recommending your website to all my friends!",
+        },
+        {
+          customer_name: "Alexander Wilson",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor I bought from your website is a game-changer. It has made my computer lightning-fast, and I'm thrilled with its capabilities.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I couldn't be happier with my purchase. Your website offered a great selection, and the processor I chose has transformed my PC into a powerhouse!",
+        },
+      ],
     },
     {
       id: "PSU35713",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "be quiet! Straight Power 11 750W",
       category: "PowerSupply",
       status: "In Stock",
@@ -398,11 +1027,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.7,
-      reviews: 250,
+      reviews: [
+        {
+          customer_name: "Michael Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am highly impressed with the processor I bought from your website. It has given my computer a significant performance boost, and it handles heavy tasks with ease.",
+        },
+        {
+          customer_name: "Emily Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor exceeded my expectations! It arrived on time, and the installation process was a breeze. My PC now runs faster and smoother than ever before.",
+        },
+        {
+          customer_name: "Christopher Smith",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm really happy with my purchase. The processor is powerful and efficient, and it has made a noticeable difference in my computer's overall performance.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor has been a game-changer for me. It handles demanding applications effortlessly, and I'm delighted with the seamless experience it provides.",
+        },
+        {
+          customer_name: "David Thompson",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website offered a great selection of processors, and I found the perfect one for my needs. It has transformed my PC into a powerful workstation.",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "I am thoroughly satisfied with the processor and the buying experience from your website. The processor's performance is outstanding, and I'm a happy customer.",
+        },
+      ],
     },
     {
       id: "PSU46802",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Thermaltake Toughpower GF1 850W",
       category: "PowerSupply",
       status: "Out of Stock",
@@ -422,11 +1088,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.8,
-      reviews: 190,
+      reviews: [
+        {
+          customer_name: "Andrew Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I purchased from your website is outstanding! It has significantly improved my computer's performance, and I'm very satisfied with my purchase.",
+        },
+        {
+          customer_name: "Sophia Williams",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm delighted with the processor I received. It was easy to install, and now my PC runs like a charm. Thank you for providing such a great product!",
+        },
+        {
+          customer_name: "Ryan Martin",
+          comment_date: "2023-07-26",
+          comment:
+            "The processor is fantastic! It handles all my tasks effortlessly, and I've noticed a considerable speed boost. I'm glad I chose your website for my purchase.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm thoroughly impressed with the processor's performance. It has exceeded my expectations, and I'm recommending your website to all my friends!",
+        },
+        {
+          customer_name: "Alexander Wilson",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor I bought from your website is a game-changer. It has made my computer lightning-fast, and I'm thrilled with its capabilities.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I couldn't be happier with my purchase. Your website offered a great selection, and the processor I chose has transformed my PC into a powerhouse!",
+        },
+      ],
     },
     {
       id: "PSU58024",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Cooler Master MWE Gold 650",
       category: "PowerSupply",
       status: "In Stock",
@@ -446,11 +1149,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 300,
+      reviews: [
+        {
+          customer_name: "Michael Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am highly impressed with the processor I bought from your website. It has given my computer a significant performance boost, and it handles heavy tasks with ease.",
+        },
+        {
+          customer_name: "Emily Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor exceeded my expectations! It arrived on time, and the installation process was a breeze. My PC now runs faster and smoother than ever before.",
+        },
+        {
+          customer_name: "Christopher Smith",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm really happy with my purchase. The processor is powerful and efficient, and it has made a noticeable difference in my computer's overall performance.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor has been a game-changer for me. It handles demanding applications effortlessly, and I'm delighted with the seamless experience it provides.",
+        },
+        {
+          customer_name: "David Thompson",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website offered a great selection of processors, and I found the perfect one for my needs. It has transformed my PC into a powerful workstation.",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "I am thoroughly satisfied with the processor and the buying experience from your website. The processor's performance is outstanding, and I'm a happy customer.",
+        },
+      ],
     },
     {
       id: "STO12345",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Samsung 970 EVO Plus 1TB",
       category: "StorageDevice",
       status: "In Stock",
@@ -470,11 +1210,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.8,
-      reviews: 280,
+      reviews: [
+        {
+          customer_name: "Jennifer Lee",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website is incredible! It has given my computer a new lease on life, and I'm extremely satisfied with its performance.",
+        },
+        {
+          customer_name: "William Johnson",
+          comment_date: "2023-07-27",
+          comment:
+            "I am impressed with the processor's capabilities. It handles demanding tasks effortlessly, and my system runs smoother than ever before. Thank you!",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your website for providing top-notch processors. The one I received is perfect for my needs, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Ethan Wilson",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It has improved my gaming experience significantly, and I'm thrilled with the exceptional performance it offers.",
+        },
+        {
+          customer_name: "Ava Martinez",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm really impressed with the processor's speed and efficiency. It was a great investment, and I'm glad I chose your website for my processor upgrade.",
+        },
+        {
+          customer_name: "Oliver Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor exceeded my expectations by far! It has made multitasking a breeze, and I'm recommending your website to all my tech-savvy friends.",
+        },
+      ],
     },
     {
       id: "STO67890",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Crucial MX500 2TB",
       category: "StorageDevice",
       status: "In Stock",
@@ -494,11 +1271,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 300,
+      reviews: [
+        {
+          customer_name: "Michael Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am highly impressed with the processor I bought from your website. It has given my computer a significant performance boost, and it handles heavy tasks with ease.",
+        },
+        {
+          customer_name: "Emily Davis",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor exceeded my expectations! It arrived on time, and the installation process was a breeze. My PC now runs faster and smoother than ever before.",
+        },
+        {
+          customer_name: "Christopher Smith",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm really happy with my purchase. The processor is powerful and efficient, and it has made a noticeable difference in my computer's overall performance.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor has been a game-changer for me. It handles demanding applications effortlessly, and I'm delighted with the seamless experience it provides.",
+        },
+        {
+          customer_name: "David Thompson",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website offered a great selection of processors, and I found the perfect one for my needs. It has transformed my PC into a powerful workstation.",
+        },
+        {
+          customer_name: "Olivia Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "I am thoroughly satisfied with the processor and the buying experience from your website. The processor's performance is outstanding, and I'm a happy customer.",
+        },
+      ],
     },
     {
       id: "STO24680",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Western Digital Black SN750 500GB",
       category: "StorageDevice",
       status: "In Stock",
@@ -518,11 +1332,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.6,
-      reviews: 250,
+      reviews: [
+        {
+          customer_name: "Emily Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "I am thrilled with the processor I purchased from your website. It has transformed my computer's performance, and I'm impressed with its speed.",
+        },
+        {
+          customer_name: "Michael Wilson",
+          comment_date: "2023-07-27",
+          comment:
+            "The processor is fantastic! It handles all my tasks with ease, and I've noticed a significant improvement in my productivity. Thank you!",
+        },
+        {
+          customer_name: "Sophia Miller",
+          comment_date: "2023-07-26",
+          comment:
+            "I'm extremely satisfied with the processor's performance. It's been a pleasure using it, and I'm recommending your website to my colleagues.",
+        },
+        {
+          customer_name: "Daniel Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor I bought from your website is a game-changer for my PC. It runs much smoother now, and I'm grateful for the excellent service!",
+        },
+        {
+          customer_name: "Olivia Martin",
+          comment_date: "2023-07-24",
+          comment:
+            "Your website provided the perfect processor for my needs. It's fast, reliable, and exactly what I was looking for. Keep up the great work!",
+        },
+        {
+          customer_name: "Ethan Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I'm really impressed with the processor's performance and how cool it stays under load. It's a great investment, and I'm a satisfied customer.",
+        },
+      ],
     },
     {
       id: "STO35713",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Seagate BarraCuda 4TB",
       category: "StorageDevice",
       status: "In Stock",
@@ -542,11 +1393,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.6,
       averageRating: 4.7,
-      reviews: 230,
+      reviews: [
+        {
+          customer_name: "Andrew Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I purchased from your website is outstanding! It has significantly improved my computer's performance, and I'm very satisfied with my purchase.",
+        },
+        {
+          customer_name: "Sophia Williams",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm delighted with the processor I received. It was easy to install, and now my PC runs like a charm. Thank you for providing such a great product!",
+        },
+        {
+          customer_name: "Ryan Martin",
+          comment_date: "2023-07-26",
+          comment:
+            "The processor is fantastic! It handles all my tasks effortlessly, and I've noticed a considerable speed boost. I'm glad I chose your website for my purchase.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm thoroughly impressed with the processor's performance. It has exceeded my expectations, and I'm recommending your website to all my friends!",
+        },
+        {
+          customer_name: "Alexander Wilson",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor I bought from your website is a game-changer. It has made my computer lightning-fast, and I'm thrilled with its capabilities.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I couldn't be happier with my purchase. Your website offered a great selection, and the processor I chose has transformed my PC into a powerhouse!",
+        },
+      ],
     },
     {
       id: "STO46802",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "ADATA SU800 256GB",
       category: "StorageDevice",
       status: "In Stock",
@@ -566,11 +1454,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.8,
-      reviews: 190,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
     {
       id: "STO58024",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Toshiba X300 8TB",
       category: "StorageDevice",
       status: "Out of Stock",
@@ -590,11 +1515,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.9,
-      reviews: 300,
+      reviews: [
+        {
+          customer_name: "Andrew Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I purchased from your website is outstanding! It has significantly improved my computer's performance, and I'm very satisfied with my purchase.",
+        },
+        {
+          customer_name: "Sophia Williams",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm delighted with the processor I received. It was easy to install, and now my PC runs like a charm. Thank you for providing such a great product!",
+        },
+        {
+          customer_name: "Ryan Martin",
+          comment_date: "2023-07-26",
+          comment:
+            "The processor is fantastic! It handles all my tasks effortlessly, and I've noticed a considerable speed boost. I'm glad I chose your website for my purchase.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "I'm thoroughly impressed with the processor's performance. It has exceeded my expectations, and I'm recommending your website to all my friends!",
+        },
+        {
+          customer_name: "Alexander Wilson",
+          comment_date: "2023-07-24",
+          comment:
+            "The processor I bought from your website is a game-changer. It has made my computer lightning-fast, and I'm thrilled with its capabilities.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "I couldn't be happier with my purchase. Your website offered a great selection, and the processor I chose has transformed my PC into a powerhouse!",
+        },
+      ],
     },
     {
       id: "STO82037",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Intel Optane Memory H10 512GB",
       category: "StorageDevice",
       status: "In Stock",
@@ -614,11 +1576,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 260,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
     {
       id: "MON12345",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "ASUS ROG Swift PG279Q",
       category: "Monitor",
       status: "In Stock",
@@ -642,11 +1641,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.8,
-      reviews: 280,
+      reviews: [
+        {
+          customer_name: "Jennifer Lee",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website is incredible! It has given my computer a new lease on life, and I'm extremely satisfied with its performance.",
+        },
+        {
+          customer_name: "William Johnson",
+          comment_date: "2023-07-27",
+          comment:
+            "I am impressed with the processor's capabilities. It handles demanding tasks effortlessly, and my system runs smoother than ever before. Thank you!",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your website for providing top-notch processors. The one I received is perfect for my needs, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Ethan Wilson",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It has improved my gaming experience significantly, and I'm thrilled with the exceptional performance it offers.",
+        },
+        {
+          customer_name: "Ava Martinez",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm really impressed with the processor's speed and efficiency. It was a great investment, and I'm glad I chose your website for my processor upgrade.",
+        },
+        {
+          customer_name: "Oliver Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor exceeded my expectations by far! It has made multitasking a breeze, and I'm recommending your website to all my tech-savvy friends.",
+        },
+      ],
     },
     {
       id: "MON67890",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Acer Predator XB271HU",
       category: "Monitor",
       status: "In Stock",
@@ -669,11 +1705,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 300,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
     {
       id: "MON24680",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "LG 34GN850-B",
       category: "Monitor",
       status: "In Stock",
@@ -697,11 +1770,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.8,
-      reviews: 280,
+      reviews: [
+        {
+          customer_name: "Jennifer Lee",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website is incredible! It has given my computer a new lease on life, and I'm extremely satisfied with its performance.",
+        },
+        {
+          customer_name: "William Johnson",
+          comment_date: "2023-07-27",
+          comment:
+            "I am impressed with the processor's capabilities. It handles demanding tasks effortlessly, and my system runs smoother than ever before. Thank you!",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your website for providing top-notch processors. The one I received is perfect for my needs, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Ethan Wilson",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It has improved my gaming experience significantly, and I'm thrilled with the exceptional performance it offers.",
+        },
+        {
+          customer_name: "Ava Martinez",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm really impressed with the processor's speed and efficiency. It was a great investment, and I'm glad I chose your website for my processor upgrade.",
+        },
+        {
+          customer_name: "Oliver Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor exceeded my expectations by far! It has made multitasking a breeze, and I'm recommending your website to all my tech-savvy friends.",
+        },
+      ],
     },
     {
       id: "MON35713",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Dell Ultrasharp U2419H",
       category: "Monitor",
       status: "In Stock",
@@ -725,11 +1835,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.6,
-      reviews: 250,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
     {
       id: "MON46802",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "ViewSonic XG2402",
       category: "Monitor",
       status: "In Stock",
@@ -753,11 +1900,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.7,
-      reviews: 230,
+      reviews: [
+        {
+          customer_name: "Sophia Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website is incredible! It has given my computer a new level of speed and performance. Highly recommended!",
+        },
+        {
+          customer_name: "Oliver Wilson",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely satisfied with my purchase. The processor works flawlessly, and I've noticed a significant improvement in my computer's overall responsiveness.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering top-notch processors. The one I received is perfect for my needs, and it's made a world of difference in my work tasks.",
+        },
+        {
+          customer_name: "Michael Thompson",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor exceeded my expectations! My PC now handles resource-intensive applications with ease, and I'm thoroughly impressed.",
+        },
+        {
+          customer_name: "Ava Martinez",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm really happy with my purchase. The processor has taken my gaming experience to a whole new level, and I'm thoroughly enjoying it.",
+        },
+        {
+          customer_name: "Daniel Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor is fantastic! It was easy to install, and it's made my computer blazing fast. Thank you for delivering a quality product!",
+        },
+      ],
     },
     {
       id: "OTH12345",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Logitech G502 Hero Gaming Mouse",
       category: "Others",
       status: "In Stock",
@@ -778,11 +1962,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.9,
       averageRating: 4.8,
-      reviews: 280,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
     {
       id: "OTH67890",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Blue Yeti USB Microphone",
       category: "Others",
       status: "In Stock",
@@ -804,11 +2025,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 300,
+      reviews: [
+        {
+          customer_name: "Sophia Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website is incredible! It has given my computer a new level of speed and performance. Highly recommended!",
+        },
+        {
+          customer_name: "Oliver Wilson",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely satisfied with my purchase. The processor works flawlessly, and I've noticed a significant improvement in my computer's overall responsiveness.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering top-notch processors. The one I received is perfect for my needs, and it's made a world of difference in my work tasks.",
+        },
+        {
+          customer_name: "Michael Thompson",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor exceeded my expectations! My PC now handles resource-intensive applications with ease, and I'm thoroughly impressed.",
+        },
+        {
+          customer_name: "Ava Martinez",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm really happy with my purchase. The processor has taken my gaming experience to a whole new level, and I'm thoroughly enjoying it.",
+        },
+        {
+          customer_name: "Daniel Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor is fantastic! It was easy to install, and it's made my computer blazing fast. Thank you for delivering a quality product!",
+        },
+      ],
     },
     {
       id: "OTH24680",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Anker PowerCore 26800 Portable Charger",
       category: "Others",
       status: "In Stock",
@@ -828,11 +2086,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.7,
       averageRating: 4.6,
-      reviews: 250,
+      reviews: [
+        {
+          customer_name: "Sophia Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I bought from your website is incredible! It has given my computer a new level of speed and performance. Highly recommended!",
+        },
+        {
+          customer_name: "Oliver Wilson",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely satisfied with my purchase. The processor works flawlessly, and I've noticed a significant improvement in my computer's overall responsiveness.",
+        },
+        {
+          customer_name: "Emma Davis",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering top-notch processors. The one I received is perfect for my needs, and it's made a world of difference in my work tasks.",
+        },
+        {
+          customer_name: "Michael Thompson",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor exceeded my expectations! My PC now handles resource-intensive applications with ease, and I'm thoroughly impressed.",
+        },
+        {
+          customer_name: "Ava Martinez",
+          comment_date: "2023-07-24",
+          comment:
+            "I'm really happy with my purchase. The processor has taken my gaming experience to a whole new level, and I'm thoroughly enjoying it.",
+        },
+        {
+          customer_name: "Daniel Brown",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor is fantastic! It was easy to install, and it's made my computer blazing fast. Thank you for delivering a quality product!",
+        },
+      ],
     },
     {
       id: "OTH35713",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "AmazonBasics Laptop Stand",
       category: "Others",
       status: "In Stock",
@@ -850,11 +2145,48 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.7,
-      reviews: 230,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
     {
       id: "OTH46802",
-      image: "./images/1.jpg",
+      image: "./../images/1.jpg",
       productName: "Raspberry Pi 4 Model B",
       category: "Others",
       status: "In Stock",
@@ -873,7 +2205,44 @@ export default async function handler(req, res) {
       },
       individualRating: 4.8,
       averageRating: 4.9,
-      reviews: 190,
+      reviews: [
+        {
+          customer_name: "David Johnson",
+          comment_date: "2023-07-28",
+          comment:
+            "The processor I ordered from your website is fantastic! It has given my computer a significant performance boost, and I couldn't be happier with my purchase.",
+        },
+        {
+          customer_name: "Isabella Martinez",
+          comment_date: "2023-07-27",
+          comment:
+            "I'm extremely pleased with the processor's performance. My computer now runs smoother than ever, and it handles all my tasks with ease.",
+        },
+        {
+          customer_name: "James Wilson",
+          comment_date: "2023-07-26",
+          comment:
+            "Kudos to your team for offering such high-quality processors. The one I received is top-notch, and it has exceeded my expectations.",
+        },
+        {
+          customer_name: "Sophia Davis",
+          comment_date: "2023-07-25",
+          comment:
+            "The processor is a game-changer! It's fast, efficient, and has improved my workflow. I'm grateful for the great service and product.",
+        },
+        {
+          customer_name: "Ethan Brown",
+          comment_date: "2023-07-24",
+          comment:
+            "I couldn't be happier with my purchase. The processor is perfect for my needs, and my computer now performs like a high-end machine.",
+        },
+        {
+          customer_name: "Olivia Thompson",
+          comment_date: "2023-07-23",
+          comment:
+            "The processor has made a significant difference in my gaming experience. I'm amazed by its speed and responsiveness. Thank you!",
+        },
+      ],
     },
   ];
   const product = fakeData.find((product) => product.id == productid);

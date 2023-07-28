@@ -1,9 +1,9 @@
+import ShowReview from "@/components/UI/ShowReview";
 import RootLayout from "@/components/layouts/RootLayout";
 import { useRouter } from "next/router";
 import React from "react";
 
 const ProductDetails = ({ product }) => {
-  console.log(product);
   const {
     id,
     image,
@@ -17,6 +17,7 @@ const ProductDetails = ({ product }) => {
     averageRating,
     reviews,
   } = product;
+
   return (
     <section className="text-gray-700 body-font overflow-hidden bg-white">
       <div className="container px-5 py-24 mx-auto">
@@ -47,7 +48,7 @@ const ProductDetails = ({ product }) => {
                     type="radio"
                     name="rating-7"
                     className="mask mask-star-2 bg-orange-400"
-                    checked
+                    defaultChecked
                   />
                   <input
                     type="radio"
@@ -79,9 +80,9 @@ const ProductDetails = ({ product }) => {
               <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -90,7 +91,15 @@ const ProductDetails = ({ product }) => {
               </button>
             </div>
           </div>
+          <h3 className="mx-4 text-2xl mt-10 font-bold underline">
+            What our customer says...
+          </h3>
         </div>
+        {/* testing */}
+
+        {reviews.map((review, id) => (
+          <ShowReview key={id} review={review} />
+        ))}
       </div>
     </section>
   );
@@ -101,26 +110,6 @@ export default ProductDetails;
 ProductDetails.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
-
-// export const getStaticPaths = async () => {
-//   const res = await fetch(`http://localhost:3000/api/products`);
-//   const data = await res.json();
-//   const paths = data?.data.map((product) => ({
-//     params: { productid: product.id },
-//   }));
-
-//   return { paths, fallback: false };
-// };
-
-// export const getStaticProps = async ({ params }) => {
-//   console.log("ddd", params);
-//   const res = await fetch(
-//     `http://localhost:3000/api/products/${params.productid}`
-//   );
-//   const data = await res.json();
-//   console.log("asdasd", data);
-//   return { props: { data } };
-// };
 
 export async function getStaticPaths() {
   const res = await fetch("http://localhost:3000/api/products");
