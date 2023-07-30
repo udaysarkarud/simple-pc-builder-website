@@ -38,6 +38,17 @@ const ProductDetails = ({ product }) => {
               <div className="flex mb-4"></div>
               <p className="leading-relaxe">{description}</p>
 
+              <div className="my-3">
+                <h4 className="font-semibold underline">key Features:</h4>
+                <ul>
+                  {Object.entries(keyFeatures).map(([key, value], index) => (
+                    <li key={index}>
+                      {key}: {value}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               <div className="flex items-center my-3">
                 <p className="font-semibold mr-4">Custome Ratings:</p>
                 <Rating
