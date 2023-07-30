@@ -2,12 +2,14 @@ import RootLayout from "@/components/layouts/RootLayout";
 import Hero from "@/components/shared/Hero";
 import Products from "./products";
 import shuffleProducts from "@/components/utils/shuffleproducts";
+import TrustedBy from "@/components/shared/TrustedBy";
 
 export default function HomePage({ data }) {
   return (
     <main>
       <Hero />
       <Products products={data} />
+      <TrustedBy />
     </main>
   );
 }

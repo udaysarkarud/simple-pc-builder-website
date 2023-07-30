@@ -59,13 +59,13 @@ const HeaderPage = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link href="/category/processor">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
                 <li>
-                  <Link href="/category/motherboard">Blogs</Link>
+                  <Link href="/blogs">Blogs</Link>
                 </li>
                 <li>
-                  <Link href="/category/ram">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -139,13 +139,13 @@ const HeaderPage = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link href="/category/processor">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
                 <li>
-                  <Link href="/category/motherboard">Blogs</Link>
+                  <Link href="/blogs">Blogs</Link>
                 </li>
                 <li>
-                  <Link href="/category/ram">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>

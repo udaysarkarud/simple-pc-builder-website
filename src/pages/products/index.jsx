@@ -8,12 +8,12 @@ const Products = ({ products }) => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses worldwide.
+            Our Featured Products Loved by All.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
+            Our Featured Products Collection. Handpicked with care, these
+            top-notch items cater to your every need and passion. Elevate your
+            lifestyle with the latest trends.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
