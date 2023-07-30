@@ -1,7 +1,8 @@
 import ShowReview from "@/components/UI/ShowReview";
 import RootLayout from "@/components/layouts/RootLayout";
 import React from "react";
-
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
 const ProductDetails = ({ product }) => {
   const {
     id,
@@ -25,6 +26,7 @@ const ProductDetails = ({ product }) => {
             className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200"
             src={image}
           />
+
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <div className="pb-5 border-b-2 border-gray-200 mb-5">
               <h2 className="text-sm title-font text-gray-500 tracking-widest">
@@ -35,36 +37,14 @@ const ProductDetails = ({ product }) => {
               </h1>
               <div className="flex mb-4"></div>
               <p className="leading-relaxe">{description}</p>
+
               <div className="flex items-center my-3">
-                <p className="font-semibold">Custome Ratings:</p>
-                <div className="rating rating-md mx-3">
-                  <input
-                    type="radio"
-                    name="rating-7"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-7"
-                    className="mask mask-star-2 bg-orange-400"
-                    defaultChecked
-                  />
-                  <input
-                    type="radio"
-                    name="rating-7"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-7"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-7"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                </div>
+                <p className="font-semibold mr-4">Custome Ratings:</p>
+                <Rating
+                  style={{ maxWidth: 100 }}
+                  value={averageRating}
+                  readOnly
+                />
               </div>
             </div>
 
