@@ -34,38 +34,22 @@ const HeaderPage = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <label>Categories</label>
-                  <ul>
-                    <li>
-                      <Link href="/category/processor">CPU / Processor</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/motherboard">Motherboard</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/ram">RAM</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/powersupply">
-                        Power Supply Unit
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/category/monitor">Monitor</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/others">Others</Link>
-                    </li>
-                  </ul>
+                  <Link href="/category/processor">CPU / Processor</Link>
                 </li>
                 <li>
-                  <Link href="/category/processor">About</Link>
+                  <Link href="/category/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <Link href="/category/motherboard">Blogs</Link>
+                  <Link href="/category/ram">RAM</Link>
                 </li>
                 <li>
-                  <Link href="/category/ram">Contact</Link>
+                  <Link href="/category/powersupply">Power Supply Unit</Link>
+                </li>
+                <li>
+                  <Link href="/category/monitor">Monitor</Link>
+                </li>
+                <li>
+                  <Link href="/category/others">Others</Link>
                 </li>
               </ul>
             </div>
@@ -110,42 +94,23 @@ const HeaderPage = () => {
                 <li>
                   <Link href="/">Homes</Link>
                 </li>
-                <li className="dropdown">
-                  <label tabIndex={0}>Categories</label>
-                  <ul
-                    tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-                  >
-                    <li>
-                      <Link href="/category/processor">CPU / Processor</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/motherboard">Motherboard</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/ram">RAM</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/powersupply">
-                        Power Supply Unit
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/category/monitor">Monitor</Link>
-                    </li>
-                    <li>
-                      <Link href="/category/others">Others</Link>
-                    </li>
-                  </ul>
+                <li>
+                  <Link href="/category/processor">CPU / Processor</Link>
                 </li>
                 <li>
-                  <Link href="/category/processor">About</Link>
+                  <Link href="/category/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <Link href="/category/motherboard">Blogs</Link>
+                  <Link href="/category/ram">RAM</Link>
                 </li>
                 <li>
-                  <Link href="/category/ram">Contact</Link>
+                  <Link href="/category/powersupply">Power Supply Unit</Link>
+                </li>
+                <li>
+                  <Link href="/category/monitor">Monitor</Link>
+                </li>
+                <li>
+                  <Link href="/category/others">Others</Link>
                 </li>
               </ul>
             </div>
