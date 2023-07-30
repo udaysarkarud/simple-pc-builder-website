@@ -1,6 +1,8 @@
+import fakeData from "@/components/fakedata";
+
 export default async function handler(req, res) {
   const { productid } = req.query;
-  const fakeData = [
+  /*   const fakeData = [
     {
       id: "CPUP12345",
       image: "./../images/1.jpg",
@@ -2244,8 +2246,9 @@ export default async function handler(req, res) {
         },
       ],
     },
-  ];
-  const product = fakeData.find((product) => product.id == productid);
+  ]; */
+  const mainData = fakeData;
+  const product = mainData.find((product) => product.id == productid);
 
   res.status(200).json(product);
 }

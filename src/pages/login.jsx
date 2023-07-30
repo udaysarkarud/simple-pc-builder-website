@@ -1,7 +1,7 @@
 import RootLayout from "@/components/layouts/RootLayout";
-import React from "react";
+import { signIn } from "next-auth/react";
 
-const login = () => {
+const LoginPage = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -11,7 +11,10 @@ const login = () => {
 
             <div className="form-control mt-6">
               <div className="github-btn my-2">
-                <button className="bg-black text-white rounded-lg px-4 py-3 shadow-md flex items-center space-x-2 hover:bg-gray-800 focus:outline-none w-full">
+                <button
+                  className="bg-black text-white rounded-lg px-4 py-3 shadow-md flex items-center space-x-2 hover:bg-gray-800 focus:outline-none w-full"
+                  onClick={() => signIn("github", { callbackUrl: "/" })}
+                >
                   <svg
                     className="w-5 h-5"
                     fill="currentColor"
@@ -19,7 +22,7 @@ const login = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M10 0C4.477 0 0 4.477 0 10c0 4.418 2.865 8.167 6.839 9.486.5.093.682-.218.682-.485 0-.24-.01-1.047-.015-1.902-2.782.603-3.369-1.342-3.369-1.342-.455-1.163-1.11-1.473-1.11-1.473-.909-.621.069-.609.069-.609 1.005.07 1.532 1.03 1.532 1.03.892 1.531 2.341 1.089 2.914.832.092-.645.351-1.085.637-1.334-2.22-.252-4.556-1.11-4.556-4.943 0-1.093.39-1.984 1.032-2.682-.103-.253-.446-1.271.097-2.648 0 0 .84-.269 2.75 1.025A9.565 9.565 0 0 1 10 3.504c.854.003 1.713.114 2.52.337 1.91-1.293 2.748-1.025 2.748-1.025.545 1.377.202 2.394.1 2.648.642.698 1.03 1.589 1.03 2.682 0 3.844-2.338 4.688-4.565 4.935.359.309.68.918.68 1.85 0 1.335-.013 2.413-.013 2.739 0 .27.18.581.686.484C17.137 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10"
                     ></path>
                   </svg>
@@ -73,8 +76,8 @@ const login = () => {
   );
 };
 
-export default login;
+export default LoginPage;
 
-login.getLayout = function getLayout(page) {
+LoginPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };

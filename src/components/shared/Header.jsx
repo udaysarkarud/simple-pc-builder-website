@@ -1,7 +1,9 @@
+import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 
 const Header = () => {
+  const { data: session } = useSession();
   return (
     <header className="py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -114,32 +116,27 @@ const Header = () => {
             </div>
             <div className="navbar-end">
               <Link
-                href="/"
+                href="/pcbuilder"
                 className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-500 text-white hover:text-slate-100 hover:bg-blue-800 mx-1"
               >
                 <span>PC Builder</span>
               </Link>
 
-              <Link
-                href="/login"
-                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-rose-400 text-white hover:text-slate-100 hover:bg-rose-800 mx-1"
-              >
-                <span>Login</span>
-              </Link>
-
-              {/* <Link
-                href="/signin"
-                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-lime-700 text-white hover:text-slate-100 hover:bg-lime-800"
-              >
-                <span>Singin</span>
-              </Link>
-
-              <Link
-                href="/logout"
-                className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-red-400 text-white hover:text-slate-100 hover:bg-red-600"
-              >
-                <span>Logout</span>
-              </Link> */}
+              {session?.user ? (
+                <button
+                  onClick={() => signOut()}
+                  className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-red-400 text-white hover:text-slate-100 hover:bg-red-600"
+                >
+                  <span>Logout</span>
+                </button>
+              ) : (
+                <Link
+                  href="/login"
+                  className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-950 text-white hover:text-slate-100 hover:bg-slate-400 mx-1"
+                >
+                  <span>Login</span>
+                </Link>
+              )}
             </div>
           </div>
         </nav>

@@ -1,6 +1,5 @@
 import ProductCard from "@/components/UI/ProductCard";
 import RootLayout from "@/components/layouts/RootLayout";
-import shuffleProducts from "@/components/utils/shuffleproducts";
 import React from "react";
 
 const Products = ({ products }) => {
@@ -18,7 +17,7 @@ const Products = ({ products }) => {
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
-          {products.map((product) => (
+          {products?.map((product) => (
             <ProductCard key={product?.id} product={product} />
           ))}
         </div>

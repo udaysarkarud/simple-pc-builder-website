@@ -1,7 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
+import fakeData from "@/components/fakedata";
+
 export default function handler(req, res) {
-  const fakeData = [
+  /*  const fakeData = [
     {
       id: "CPUP12345",
       image: "./../images/1.jpg",
@@ -2245,7 +2247,7 @@ export default function handler(req, res) {
         },
       ],
     },
-  ];
-
-  res.status(200).json({ data: fakeData });
+  ]; */
+  const mainData = fakeData;
+  res.status(200).json({ data: mainData });
 }

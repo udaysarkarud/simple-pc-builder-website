@@ -96,7 +96,7 @@ const ProductDetails = ({ product }) => {
         </div>
         {/* testing */}
 
-        {reviews.map((review, id) => (
+        {reviews?.map((review, id) => (
           <ShowReview key={id} review={review} />
         ))}
       </div>
@@ -114,7 +114,7 @@ export async function getStaticPaths() {
   const res = await fetch("http://localhost:3000/api/products");
   const { data } = await res.json();
 
-  const paths = data.map((product) => ({
+  const paths = data?.map((product) => ({
     params: { productid: product.id },
   }));
 

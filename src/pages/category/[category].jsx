@@ -1,5 +1,6 @@
 import ProductCard from "@/components/UI/ProductCard";
 import RootLayout from "@/components/layouts/RootLayout";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -7,6 +8,24 @@ const CategoryPage = ({ products }) => {
   const {
     query: { category },
   } = useRouter();
+
+  /*   const { push } = useRouter();
+
+  const { data: session, status } = useSession();
+
+  if (status === "loading") {
+    return (
+      <h1>
+        <center>
+          <span className="loading loading-bars loading-lg"></span>
+        </center>
+      </h1>
+    );
+  }
+
+  if (status === "unauthenticated") {
+    push("/login");
+  } */
   return (
     <section className="bg-slate-50 py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -23,7 +42,7 @@ const CategoryPage = ({ products }) => {
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
-          {products.map((product) => (
+          {products?.map((product) => (
             <ProductCard key={product?.id} product={product} />
           ))}
         </div>
@@ -42,7 +61,7 @@ export async function getStaticPaths() {
   const res = await fetch("http://localhost:3000/api/category");
   const { data } = await res.json();
 
-  const paths = data.map((product) => ({
+  const paths = data?.map((product) => ({
     params: { category: product.category },
   }));
 

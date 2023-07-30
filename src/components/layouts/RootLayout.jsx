@@ -5,7 +5,6 @@ import Footer from "../shared/Footer";
 const RootLayout = ({ children }) => {
   return (
     <>
-      <Header />
       {children}
       <Footer />
     </>
