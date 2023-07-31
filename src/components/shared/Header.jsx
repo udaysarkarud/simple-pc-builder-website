@@ -46,6 +46,9 @@ const HeaderPage = () => {
                       <Link href="/category/ram">RAM</Link>
                     </li>
                     <li>
+                      <Link href="/category/storagedevice">Storage Device</Link>
+                    </li>
+                    <li>
                       <Link href="/category/powersupply">
                         Power Supply Unit
                       </Link>
@@ -124,6 +127,9 @@ const HeaderPage = () => {
                     </li>
                     <li>
                       <Link href="/category/ram">RAM</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/storagedevice">Storage Device</Link>
                     </li>
                     <li>
                       <Link href="/category/powersupply">

@@ -1,12 +1,11 @@
 import Link from "next/link";
 import React from "react";
-
 const TrustedBy = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-10 text-center lg:pt-10">
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
-          Trusted by these many companies so far
+          Spotlight on Our Best: Featured Category
         </p>
         <ul
           role="list"
@@ -18,40 +17,37 @@ const TrustedBy = () => {
               className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
             >
               <li className="flex">
-                <img
-                  alt="Transistor"
-                  loading="lazy"
-                  width="158"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://salient.tailwindui.com/_next/static/media/transistor.7274e6c3.svg"
-                />
+                <Link href="/category/processor">
+                  <img
+                    loading="lazy"
+                    width="80"
+                    style={{ color: "transparent" }}
+                    src="https://www.cloud.ryanscomputers.com/cdn/pc-builder-components/cpu-48x48_1686724838.png"
+                  />
+                  <p>Processor</p>
+                </Link>
               </li>
               <li className="flex">
-                <img
-                  alt="Tuple"
-                  loading="lazy"
-                  width="105"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://salient.tailwindui.com/_next/static/media/tuple.74eb0ae0.svg"
-                />
+                <Link href="/category/motherboard">
+                  <img
+                    loading="lazy"
+                    width="80"
+                    style={{ color: "transparent" }}
+                    src="https://www.cloud.ryanscomputers.com/cdn/pc-builder-components/2310600_1686989058.png"
+                  />
+                  <p>Motherboard</p>
+                </Link>
               </li>
               <li className="flex">
-                <img
-                  alt="StaticKit"
-                  loading="lazy"
-                  width="127"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://salient.tailwindui.com/_next/static/media/statickit.d7937794.svg"
-                />
+                <Link href="/category/ram">
+                  <img
+                    loading="lazy"
+                    width="80"
+                    style={{ color: "transparent" }}
+                    src="https://www.cloud.ryanscomputers.com/cdn/pc-builder-components/RAM_1686989592.png"
+                  />
+                  <p>Ram</p>
+                </Link>
               </li>
             </ul>
           </li>
@@ -61,40 +57,48 @@ const TrustedBy = () => {
               className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
             >
               <li className="flex">
-                <img
-                  alt="Mirage"
-                  loading="lazy"
-                  width="138"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://salient.tailwindui.com/_next/static/media/mirage.18d2ec4e.svg"
-                />
+                <Link href="/category/storagedevice">
+                  <img
+                    loading="lazy"
+                    width="80"
+                    style={{ color: "transparent" }}
+                    src="https://www.cloud.ryanscomputers.com/cdn/pc-builder-components/SSD-48x48_1686989668.png"
+                  />
+                  <p>Storage Device</p>
+                </Link>
               </li>
               <li className="flex">
-                <img
-                  alt="Laravel"
-                  loading="lazy"
-                  width="136"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://salient.tailwindui.com/_next/static/media/laravel.7deed17e.svg"
-                />
+                <Link href="/category/monitor">
+                  <img
+                    loading="lazy"
+                    width="80"
+                    style={{ color: "transparent" }}
+                    src="https://www.cloud.ryanscomputers.com/cdn/pc-builder-components/2194087-200_1686989982.png"
+                  />
+                  <p>Monitor</p>
+                </Link>
               </li>
               <li className="flex">
-                <img
-                  alt="Laravel"
-                  loading="lazy"
-                  width="136"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://salient.tailwindui.com/_next/static/media/statamic.6da5ebfb.svg"
-                />
+                <Link href="/category/powersupply">
+                  <img
+                    loading="lazy"
+                    width="80"
+                    style={{ color: "transparent" }}
+                    src="https://www.cloud.ryanscomputers.com/cdn/pc-builder-components/1470116_1686990072.png"
+                  />
+                  <p>Power Supply</p>
+                </Link>
+              </li>
+              <li className="flex">
+                <Link href="/category/others">
+                  <img
+                    loading="lazy"
+                    width="80"
+                    style={{ color: "transparent" }}
+                    src="https://www.cloud.ryanscomputers.com/cdn/pc-builder-components/cpu_1686989918.png"
+                  />
+                  <p>Others</p>
+                </Link>
               </li>
             </ul>
           </li>

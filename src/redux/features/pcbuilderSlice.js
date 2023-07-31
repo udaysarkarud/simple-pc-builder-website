@@ -1,26 +1,33 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  pcomponents: 0,
+  pcomponents: {
+    processor: null,
+    motherboard: null,
+    ram: null,
+    storagedevice: null,
+    powersupply: null,
+    monitor: null,
+    others: null,
+  },
 };
 
 export const pcbuilderSlice = createSlice({
   name: "pcbuilder",
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    addToBuilder: (state, action) => {
+      state.pcomponents = {
+        ...state.pcomponents,
+        [action.payload.componentName]: action.payload.component,
+      };
     },
-    decrement: (state) => {
+    removeFromBuilder: (state) => {
       state.value -= 1;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
     },
   },
 });
 
-export const { increment, decrement, incrementByAmount } =
-  pcbuilderSlice.actions;
+export const { addToBuilder, removeFromBuilder } = pcbuilderSlice.actions;
 
 export default pcbuilderSlice.reducer;

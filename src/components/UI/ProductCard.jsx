@@ -1,7 +1,10 @@
+import { addToBuilder } from "@/redux/features/pcbuilderSlice";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, selectProduct }) => {
   const {
     id,
     image,
@@ -15,6 +18,15 @@ const ProductCard = ({ product }) => {
     averageRating,
     reviews,
   } = product;
+  const dispatch = useDispatch();
+  const { push, query } = useRouter();
+
+  const addproduct = () => {
+    dispatch(
+      addToBuilder({ component: product, componentName: query.category })
+    );
+    push("/pcbuilder");
+  };
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <Link href={`/productdetails/${id}`}>
@@ -36,7 +48,9 @@ const ProductCard = ({ product }) => {
         <h2 className="card-title">{productName}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end mt-2">
-          <button className="btn btn-neutral">Buy Now (${price})</button>
+          <button className="btn btn-neutral" onClick={addproduct}>
+            {selectProduct ? "Add To Builder" : "Buy Now"}
+          </button>
         </div>
       </div>
     </div>
