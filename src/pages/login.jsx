@@ -1,4 +1,4 @@
-import RootLayout from "../components/layouts/RootLayout";
+import RootLayout from "@/components/layouts/RootLayout";
 import { signIn } from "next-auth/react";
 
 const LoginPage = () => {

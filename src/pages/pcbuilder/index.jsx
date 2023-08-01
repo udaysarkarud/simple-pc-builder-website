@@ -1,5 +1,5 @@
-import PCBuilderComponents from "../../components/UI/PCBuilderComponents";
-import RootLayout from "../../components/layouts/RootLayout";
+import PCBuilderComponents from "@/components/UI/PCBuilderComponents";
+import RootLayout from "@/components/layouts/RootLayout";
 import React from "react";
 import { useSelector } from "react-redux";
 

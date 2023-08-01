@@ -1,5 +1,5 @@
-import ShowReview from "../../components/UI/ShowReview";
-import RootLayout from "../../components/layouts/RootLayout";
+import ShowReview from "@/components/UI/ShowReview";
+import RootLayout from "@/components/layouts/RootLayout";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 const ProductDetails = ({ product }) => {
@@ -101,7 +101,9 @@ ProductDetails.getLayout = function getLayout(page) {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch(`${process.env.BASE_URL}/api/products`);
+  const res = await fetch(
+    `https://simple-pc-builder-application-api.vercel.app/api/products`
+  );
   const { data } = await res.json();
 
   const paths = data?.map((product) => ({
@@ -113,7 +115,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const res = await fetch(
-    `${process.env.BASE_URL}/api/products/${params.productid}`
+    `https://simple-pc-builder-application-api.vercel.app/api/products/${params.productid}`
   );
   const product = await res.json();
 

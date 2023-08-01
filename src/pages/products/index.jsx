@@ -1,5 +1,5 @@
-import ProductCard from "../../components/UI/ProductCard";
-import RootLayout from "../../components/layouts/RootLayout";
+import ProductCard from "@/components/UI/ProductCard";
+import RootLayout from "@/components/layouts/RootLayout";
 import React from "react";
 
 const Products = ({ products }) => {
