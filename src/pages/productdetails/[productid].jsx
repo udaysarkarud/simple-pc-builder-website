@@ -1,6 +1,5 @@
-import ShowReview from "@/components/UI/ShowReview";
-import RootLayout from "@/components/layouts/RootLayout";
-import React from "react";
+import ShowReview from "../../components/UI/ShowReview";
+import RootLayout from "../../components/layouts/RootLayout";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 const ProductDetails = ({ product }) => {
@@ -102,7 +101,7 @@ ProductDetails.getLayout = function getLayout(page) {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch(`${process.env.BASE_URL}/api/products`);
   const { data } = await res.json();
 
   const paths = data?.map((product) => ({
@@ -114,7 +113,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const res = await fetch(
-    `http://localhost:3000/api/products/${params.productid}`
+    `${process.env.BASE_URL}/api/products/${params.productid}`
   );
   const product = await res.json();
 

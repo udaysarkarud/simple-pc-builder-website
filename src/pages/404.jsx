@@ -1,5 +1,4 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import Link from "next/link";
+import RootLayout from "../components/layouts/RootLayout";
 import React from "react";
 
 const ErrorPage = () => {

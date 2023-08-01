@@ -1,6 +1,6 @@
-import ProductCard from "@/components/UI/ProductCard";
-import RootLayout from "@/components/layouts/RootLayout";
-import { useSession } from "next-auth/react";
+import ProductCard from "../../components/UI/ProductCard";
+import RootLayout from "../../components/layouts/RootLayout";
+
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -58,7 +58,7 @@ CategoryPage.getLayout = function getLayout(page) {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:3000/api/category");
+  const res = await fetch(`${process.env.BASE_URL}/api/category`);
   const { data } = await res.json();
 
   const paths = data?.map((product) => ({
@@ -70,7 +70,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const res = await fetch(
-    `http://localhost:3000/api/category/${params.category}`
+    `${process.env.BASE_URL}/api/category/${params.category}`
   );
   const products = await res.json();
   return { props: { products } };

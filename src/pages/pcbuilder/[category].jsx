@@ -1,5 +1,5 @@
-import ProductCard from "@/components/UI/ProductCard";
-import RootLayout from "@/components/layouts/RootLayout";
+import ProductCard from "../../components/UI/ProductCard";
+import RootLayout from "../../components/layouts/RootLayout";
 import React from "react";
 
 const CategoryPage = ({ products }) => {
@@ -40,7 +40,7 @@ CategoryPage.getLayout = function getLayout(page) {
 
 export async function getServerSideProps({ params }) {
   const { category } = params;
-  const res = await fetch(`http://localhost:3000/api/category/${category}`);
+  const res = await fetch(`${process.env.BASE_URL}/api/category/${category}`);
   const products = await res.json();
   return { props: { products } };
 }
